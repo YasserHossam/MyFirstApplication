@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff823c96">
+    <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:layout_centerInParent="true">
+    </Button>
+    <Button
+        android:id="@+id/howToPlayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How To Play"
+        android:layout_below="@id/playButton"
+        android:layout_centerInParent="true">
+    </Button>
+    <TextView
+        android:id="@+id/howToPlayTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:text="@string/howToPlay"
+        android:textColor="#ff823c96"
+        android:background="#ff3e184e"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textIsSelectable="true">
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/playButtonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/howToPlayTextView">
+
+    </LinearLayout>
+</RelativeLayout>
